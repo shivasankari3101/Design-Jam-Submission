@@ -17,9 +17,13 @@ body,html{
     position: relative;
 }
 
-.header_section:nth-child(2n-1){                                     /*First and third section*/
+.header_1,.header_3{                                                  /*First and third section*/
     box-shadow: 0.3px 0px  6px rgba(0,0,0,0.15);
-    height: 10vh;
+    height: 8vh;
+}
+
+.header_1{
+    height: 3vh;
 }
 
 .header_2 h1{                                                        /*Brand name*/
@@ -27,6 +31,10 @@ body,html{
     color: #cc0e74;
     font-size: 4rem;  
     margin: 0;  
+}
+
+.fa{
+    color: #790c5a;
 }
 
 .menu,.social{                                                       /*Menu and social media icons container*/
@@ -60,9 +68,9 @@ li:hover hr{                                                        /*Underline 
 
 .bars{                                                             /*Hamburger menu*/
     position: absolute;
-    top: 5px;
-    left: 10px;
-    width: 30px;
+    top: 10px;
+    left: 20px;
+    width: 40px;
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -79,16 +87,23 @@ li:hover hr{                                                        /*Underline 
 }
 
 .bar:nth-child(1){
-    width: 30px;
+    width: 40px;
     
 }
 .bar:nth-child(2){
-    width: 20px;
+    width: 25px;
    
 }
 .bar:nth-child(3){
     width: 10px;
    
+}
+
+.phone{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none;
 }
 
 
@@ -166,6 +181,23 @@ li:hover hr{                                                        /*Underline 
 
     .fixed{                                                           /*Fixed display of screen*/
         overflow: hidden;
+    }
+
+    .phone{
+        display: block;
+        transform: rotate(30deg);
+    }
+
+    .phone .fa{
+        font-size: 2rem;
+        color: green;
+        animation: vibrate 0.5s infinite alternate;
+    }
+
+    @keyframes vibrate {
+        0%{transform: scale(1);}
+        100%{transform: scale(1.2);}
+        
     }
 
 }
