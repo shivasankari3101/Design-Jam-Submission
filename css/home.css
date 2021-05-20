@@ -222,5 +222,9 @@ img{
     height: 200px;
    }
 
+   .features_content p{
+       padding: 10px;
+   }
+
 
 }
