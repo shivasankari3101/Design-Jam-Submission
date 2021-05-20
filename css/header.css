@@ -17,7 +17,7 @@
     height: 3vh;
 }
 
-.header_2 h1{                                                        /*Brand name*/
+.header_2 h1{                                                       
     font-family: 'Dancing Script', cursive;
     color: #cc0e74;
     font-size: 4rem;  
@@ -28,8 +28,8 @@
     color: #790c5a;
 }
 
-.menu,.social{                                                       /*Menu and social media icons container*/
-    width: 30%;
+.menu,.social{                                                     
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,12 +37,12 @@
     padding: 0;
 }
 
-.menu li,.social li{                                                 /*Menu items and social media icons*/
+.menu li,.social li{                                               
     cursor: pointer;
     transition: 0.5s;
 }
 
-li hr{                                                               /*Underline*/
+li hr{                                                             
     width: 0;
     height: 2px;
     background-color: #cc0e74;
@@ -53,13 +53,13 @@ li hr{                                                               /*Underline
     margin-top: 2px;
 }
 
-li:hover hr{                                                        /*Underline on hover*/
+li:hover hr{                                                       
     width: 100%;
     border-width: 1px;
     border-style: inset;
 }
 
-.bars{                                                             /*Hamburger menu*/
+.bars{                                                            
     position: absolute;
     top: 10px;
     left: 20px;
@@ -71,7 +71,7 @@ li:hover hr{                                                        /*Underline 
     display: none;    
 }
 
-.bars .bar{                                                         /*Each bar*/
+.bars .bar{                                                        
     height: 4px;
     background-color: #790c5a;
     border-radius: 10px;
@@ -113,21 +113,21 @@ li:hover hr{                                                        /*Underline 
 
 @media screen and (max-width:576px){
 
-    .header_section{                                                   /*Sections of header*/
+    .header_section{                                                  
         padding: 0;
         padding: 5px 0 5px 0;
     }
 
-    #header .header_1{                                                 /*First header*/
+    #header .header_1{                                                 
         box-shadow: 0px 0px;
         height: 30px
     }
 
-    #header .header_2{                                                 /*Second header*/
+    #header .header_2{                                               
         height: 50px;
     }
     
-    #header .header_3{                                                 /*Third header(Menu)*/
+    #header .header_3{                                                 
         position: fixed;
         top:100%;
         margin-top: 20px;
@@ -141,31 +141,31 @@ li:hover hr{                                                        /*Underline 
         z-index: 10;
     }
 
-    #header .active{                                                   /*Third header(Menu open)*/
+    #header .active{                                                   
         height: calc(100vh - 100px);
         top: 100px;
     }
 
     
-    .header_2 h1{                                                     /*Brandname*/
+    .header_2 h1{                                                    
         font-size: 3rem;
     }
 
-    .social{                                                         /*To make social media icons hidden*/
+    .social{                                                         
         display: none;
     }
 
-    .menu{                                                           /*Menu container*/
+    .menu{                                                          
         flex-direction: column;
         height: 40%;
         font-size: 1.5rem;
     }
 
-    .bars{                                                           /*hamburger icon*/
+    .bars{                                                         
         display: flex;
     }
 
-    .cross .bar{                                                      /*Cross icon when when menu is open*/
+    .cross .bar{                                                     
         width: 30px;
         position: absolute;
     }
@@ -174,9 +174,9 @@ li:hover hr{                                                        /*Underline 
     .cross .bar:nth-child(2){transform: translateX(-100px);}
     .cross .bar:nth-child(3){transform: rotate(-45deg);}
 
-    .fixed{                                                           /*Fixed display of screen*/
+    .fixed{                                                           
         overflow: hidden;
-        position: fixed
+        position: fixed;
     }
 
     .phone{
@@ -196,7 +196,7 @@ li:hover hr{                                                        /*Underline 
         
     }
 
-    .menu li:hover{
+    .menu li:hover hr{
         display: none;
     }
 

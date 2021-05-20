@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design-Jam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
@@ -43,40 +45,39 @@
 
      <!-- Header -->
 
-     <div class="home">
-         <div class="home_section home_section_1">
-             <div class="text_content">
-                 <div class="tagline" >
-                     <h3>A Trendy Donut means Hungry Stomach.</h3>
-                 </div>
-                 <div class="slogan">
-                    <p>You can't buy happiness but you can buy donuts and that's the kind of same thing</p>
-                 </div>
-                 <button class="button">
-                     Order Now
-                 </button>
-             </div>
-         </div>
-         <div class="home_section home_section_2">
-             <div class="home_pics">
-                 <div class="home_pic">
-                     <img src="https://images.unsplash.com/photo-1518975593529-3ed1930d1e6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="home_pic_2" srcset="">
-                 </div>
-             </div>
-         </div>
-     </div>
+    <div class="main_content">
+        
+    </div>
 
-    <!-- Footer -->
     <footer class="footer">
-         
+        <ul class="social_footer">
+            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+            
+        </ul>
+        <ul class="menu_footer">
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Contact</li>
+        </ul>
+        <div class="rights">
+            &copy;shivasankari_3101 |  ALL RIGHTS RESERVED
+        </div>
     </footer>
+
 <script src="./js/index.js"></script>
 <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="./js/ajax.js"></script>
 <script>
-    VanillaTilt.init(document.querySelector(".home_section_2"), {
+    VanillaTilt.init(document.querySelectorAll(".tilt_element"), {
 		max: 25,
 		speed: 300
 	});
+
+    AOS.init();
 </script>
 </body>
 </html>
