@@ -5,26 +5,30 @@ xhr.onreadystatechange = function(){
         document.getElementsByClassName("main_content")[0].innerHTML = this.responseText;
     }
     else{
-        console.log("file not found");
+        console.log("File not found");
     }
 }
 
-function open_home(){   
-    xhr.open("GET","./snippets/home.html",true);
-    xhr.send();
+function open_home(){
+   window.location.reload();
  }
 
 function open_about(){   
    xhr.open("GET","./snippets/about.html",true);
    xhr.send();
+   open_menu();
 }
 
 function open_donutsmenu(){ 
-    xhr.open("GET","./snippets/menu.html",true);
+    xhr.open("GET","./snippets/menu.html",false);
     xhr.send();
+    open_menu();
+    document.getElementsByClassName("donut_menu")[0].innerHTML += html;
+
  }
 
  function open_contact(){   
     xhr.open("GET","./snippets/contact.html",true);
     xhr.send();
+    open_menu();
  }
