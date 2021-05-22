@@ -3,7 +3,8 @@ build_card();
 function build_card(){    
     for(var i=0;i<menu_items.menu.length;i++){
        html+= "<div class='menu_card'><img src="+ `${menu_items.menu[i].image}` +"><h3>" + `${menu_items.menu[i].name}` +"</h3><div class='order'><div class='price'>";
-        html+=`${menu_items.menu[i].price}`+"</div> <button class='button'>Order now</button></div></div>";
+        html+=`${menu_items.menu[i].price}`+"</div> <button class='button'>Order now</button></div>";
+        html+="<div class='menu_loader'><div class='loader'></div></div></div>";
    } 
 }
 

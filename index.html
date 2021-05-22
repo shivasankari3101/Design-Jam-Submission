@@ -6,6 +6,9 @@
     <title>Design-Jam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+            
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -108,8 +111,15 @@
              
            </div>
         </div>
-    </div>
 
+        <div class="carousel">
+            <a class="carousel-item" ><img src="./images/menu/Divine_crush.jpg"></a>
+            <a class="carousel-item" ><img src="./images/menu/Double_trouble.jpg"></a>
+            <a class="carousel-item" ><img src="./images/menu/Midnight_beauty.jpg"></a>
+            <a class="carousel-item" ><img src="./images/menu/My_Original_Donut.jpg"></a>
+            <a class="carousel-item" ><img src="./images/menu/Original_sun.jpg"></a>
+          </div>
+    </div>
     
 
     <footer class="footer">
@@ -147,6 +157,15 @@
 
     AOS.init();
 </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+    setInterval(function(){
+        $('.carousel').carousel("next");
+    },1500)
+  });
+</script>
 </body>
 </html>

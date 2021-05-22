@@ -10,7 +10,9 @@ xhr.onreadystatechange = function(){
 }
 
 function open_home(){
+   window.history.pushState("Home","home","./");
    window.location.reload();
+   
  }
 
 function open_about(){   
@@ -31,4 +33,5 @@ function open_donutsmenu(){
     xhr.open("GET","./snippets/contact.html",true);
     xhr.send();
     open_menu();
+   
  }
