@@ -84,6 +84,11 @@ img{
     box-sizing: border-box;
 }
 
+.feature p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .feature:nth-child(2){
     background-color: #f5e9e9;
 }

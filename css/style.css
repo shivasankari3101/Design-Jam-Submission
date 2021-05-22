@@ -67,16 +67,16 @@ li:hover hr{
 
 .carousel{
     height: 600px;
-    perspective: 250px;
+    perspective: 300px;
 }
 
 .carousel .carousel-item{
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .carousel{
         height: 400px;
     }
