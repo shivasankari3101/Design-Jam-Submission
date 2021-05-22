@@ -39,10 +39,12 @@
 }
 
 .tagline{
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.8rem;
     text-align: center;
     color: #cc0e74;
+}
+
+.tagline h3{
+    font-size: 2rem;
 }
 
 .slogan{
@@ -111,7 +113,7 @@ img{
 }
 
 .feature h3{
-    font-family: 'Dancing Script', cursive;
+    
     font-size: 1.8rem;
     text-align: center;
     color: #cc0e74;

@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 body,html{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
     overflow-x: hidden;
     position: relative;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
+}
+
+a{
+    color: #790c5a;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#2e0422;
 }
 
 body>div,header,footer{
@@ -34,14 +43,16 @@ ul{
 
 
 .button{
-    padding: 10px;
+    padding: 5px;
     background-color: #cc0e74;
     color: #f1d4d4;
     border:none;
     outline: none;
+    font-size: 1rem;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .button:hover{
@@ -77,6 +88,9 @@ li:hover hr{
 
 
 @media screen and (max-width:450px) {
+    body,html{
+       font-size: 1.12rem;
+    }
     .carousel{
         height: 400px;
     }

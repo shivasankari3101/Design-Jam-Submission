@@ -18,11 +18,11 @@
 }
 
 .header_1{
-    height: 3vh;
+   height: 5vh;
 }
 
 .header_2 h1{                                                       
-    font-family: 'Dancing Script', cursive;
+    
     color: #cc0e74;
     font-size: 4rem;  
     margin: 0;  
@@ -46,6 +46,8 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+
 
 li hr{                                                             
     width: 0;
