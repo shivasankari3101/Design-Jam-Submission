@@ -27,6 +27,46 @@ body>div,header,footer{
     z-index: 1;
 }
 
+.alert{
+    background-color:rgba(0,0,0,0.3);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.4s;
+    height: 100%;
+    opacity: 0;
+}
+
+.alert_box{
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    background-color: #f1d4d4;
+    border-radius: 10px;
+    padding: 10px;
+}
+.alert img{
+    width: 50%;
+    height: 50%;
+}
+
+.alert p{
+    color: #2e0422;
+}
+
+.alert_open{
+    opacity: 1;
+    z-index: 50;
+    
+}
+
 #particles-js{
    position: fixed;
    top: 0;
@@ -43,12 +83,12 @@ ul{
 
 
 .button{
-    padding: 5px;
+    padding: 10px;
     background-color: #cc0e74;
     color: #f1d4d4;
     border:none;
     outline: none;
-    font-size: 1rem;
+    font-size: 0.85rem;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s;
@@ -57,6 +97,10 @@ ul{
 
 .button:hover{
     transform: scale(1.15);
+}
+
+button:focus{
+    background-color: #cc0e74 !important;
 }
 
 li hr{                                                             
@@ -98,6 +142,19 @@ li:hover hr{
     .carousel .carousel-item{
         width: 200px;
         height: 200px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .alert_box{
+        width: 85%;
+        height: 70%;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px){
+    .alert_box{
+        width: 50%;
     }
 }
 
