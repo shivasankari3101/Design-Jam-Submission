@@ -44,9 +44,9 @@ var menu_items= {
 
         {
             "id":7,
-            "name":"My Original Donut",
+            "name":"Chocolate donut",
             "price":"₹200",
-            "image":"./images/menu/My_Original_donut.jpg"
+            "image":"./images/menu/chocolate_donuts.jpg"
             
         },
     ]
