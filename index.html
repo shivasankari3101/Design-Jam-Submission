@@ -139,10 +139,7 @@
             
         </ul>
         <ul class="menu_footer">
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Contact</li>
+           <quote>A Moment of tasty Donut Surprise</quote>
         </ul>
         <div class="rights">
             &copy;shivasankari_3101 |  ALL RIGHTS RESERVED
@@ -171,21 +168,17 @@
     jQuery(document).ready(function($) {
 
      if (window.history && window.history.pushState) {
-
-        
         window.history.pushState('forward', null, './');
-
-$(window).on('popstate', function() {
-    alert_people();
-});
-
+        $(window).on('popstate', function() {
+        alert_people();
+        });
     }
-});
+   
+    });
 
-function alert_people(){
-    document.getElementsByClassName("alert")[0].classList.toggle("alert_open");
-  
-}
+    function alert_people(){
+        document.getElementsByClassName("alert")[0].classList.toggle("alert_open");
+    }
 
 
     $(document).ready(function(){
